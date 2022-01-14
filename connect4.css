@@ -1,0 +1,241 @@
+@font-face {
+font-family: "Rnmfont";
+src: url("get_schwifty.ttf");
+
+}
+@font-face {
+  font-family: "pickle";
+  src: url("shloprg.ttf");
+
+}
+
+body {
+
+  background-image: url("https://images3.alphacoders.com/812/812062.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Rnmfont","pickle";
+  position: fixed;
+  
+}
+
+.all {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  position:fixed;
+}
+
+.sidemenu {
+  margin-left: 40px;
+}
+
+
+
+#heading {
+  margin:0;
+  text-align: center;
+  width:400px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 48px;
+  color:#17ADC4;
+  text-shadow: 0.3px 0.3px 1.2px #BDEFBC;
+  text-shadow: 1px solid black;
+}
+
+p{
+
+  font-size: 32px;
+  color:#17ADC4;
+  text-shadow: 0.3px 0.3px 1.2px #BDEFBC;
+  text-shadow: 1px solid black;
+}
+
+h2 {
+  padding:0;
+  font-size: 40px;
+  color:#17ADC4;
+  text-align: center;
+  text-shadow: 0.3px 0.3px 1.2px #BDEFBC;
+  text-shadow: 1px solid black;
+}
+
+#ni {
+  text-align: center;
+  width:300px;
+  visibility: hidden;
+  display: block;
+  font-size: 20px;
+  padding-left: 40px;
+  color:#17ADC4;
+  text-shadow: 0.3px 0.3px 1.2px #BDEFBC;
+  text-shadow: 1px solid black;
+
+}
+
+#player1,#player2 {
+  margin: 10px;
+  font-size: 28px;
+}
+
+#first {
+  width:200px;
+  background: rgb(234, 247, 175);
+  color:
+}
+#second {
+  width:200px;
+  background: rgb(234, 247, 175);
+}
+#submit,#submit_singleplayer{
+  font-family: "pickle";
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background: #6ae067;
+  box-shadow: 1px 1px 5px black;
+  height: 40px;
+  width: 100px;
+  font-size: 22px;
+  color: #161616;
+  text-shadow: 0.15px 0.15px black;
+  border: 1.5px solid #161616;
+  border-radius: 5px ;
+  cursor: pointer;
+}
+
+#tekst {
+  margin-left: 5px;
+}
+.chip {
+  background-color: rgb(234, 247, 175);
+  height:75px;
+  width: 75px;
+  border-radius: 50%;
+  margin:5px;
+  border:2px solid;
+}
+
+.main{
+  background-color: rgb(23, 173, 196,.6);
+  width: 630px;
+  position: fixed;
+  margin-left: 12%;
+  top: 15%;
+  left: 25%;
+  border-radius: 20px;
+}
+
+
+
+.game{
+  font-family: "pickle";
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-right: 10px;
+  background: #6ae067;
+  box-shadow: 2px 2px 5px #161616;
+  height: 50px;
+  width: 150px;
+  font-size: 22px;
+  color: #161616;
+  text-shadow: 0.15px 0.15px black;
+  border: 1.5px solid #161616;
+  border-radius: 5px ;
+  cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+/*    kod za modal preuzet sa https://codepen.io/anon/pen/XoZYWP?fbclid=IwAR2eRiwUjcMRv0InkKbRwaeOW7quoPUaiCuJRd_f8jaGMHwrL1VS0YyODmE  */
+
+:root {
+  --modal-duration: 1s;
+  --modal-color: #428bca;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 #6ae067, 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: #6ae067;
+  padding: 15px;
+  color: rgb(47,79,79);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #161616;
+  color: black;
+  font-size: 20px;
+}
+
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close1 {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
